@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/land.css">
+    <link rel="stylesheet" href="css/micro.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/pdf.css">
+
+
+    
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+      >
+
+<title>BIM THIRD SEMESTER</title>
+</head>
+
+
+<body>   
+
+<div class="loginclass" id="loginid">
+    <h2>Mechi Guides</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkLogin()">Login</button>
+    <p id="error-msg"></p>
+</div>
+
+
+
+<i id="indexfile">
+
+<div class="navbar">
+        <ul> 
+          <li id="n"  onclick="noteslist()"><a href="#"><i class=" fa-light fa-book-open-cover"></i><text>Notes</text></a></li>
+          <li id="q"  onclick="questionslist()"><a href="#"><i class=" fa-light fa-cloud-question"></i><text>Questions</text></a></li>
+         <li id="c"  onclick="codelist()"><a href="#"><i class=" fa-light fa-code "></i><text>Code</text></a></li>
+         <li id="f"  onclick="filelist()"><a href="#"><i class=" fa-light fa-files"></i><text>Files</text></a></li>
+
+        </ul>
+</div>
+
+<button onclick="logout()">hhhhhhhhhhhhh</button>
+
+
+
+     
+<!-- // CREATING A SUBJECT LIST  // -->
+
+<div class="scss njs">
+      <a href="#" style="--clr:#0f0" id="mnotes" ><span>Microprocessor<i></i></span></a>
+      <a href="#" style="--clr:#ff0" id="wnotes"><span> Web Technology<i></i></span></a>
+      <a href="#" style="--clr:#0ef" id="dnotes"><span>Data Structure and Algorithms<i></i></span></a>
+      <a href="#" style="--clr:#f00" id="snotes"><span>Business Statistics<i></i></span></a>
+      <a href="#" style="--clr:#f0f" id="anotes"><span>Financial Accounting<i></i></span></a>
+</div>
+
+<!-- // CREATING A QUESTIONS LIST  // -->
+
+<div class="scss qjs">
+  <a href="#" style="--clr:#0f0"   id="  " ><span>Microprocessor<i></i></span></a>
+  <a href="#" style="--clr:#f00"  id="  "><span>Business Statistics<i></i></span></a>
+  <a href="#" style="--clr:#ff0"   id="  "><span> Web Technology<i></i></span></a>
+  <a href="#" style="--clr:#0ef"  id="  "><span>Data Structure and Algorithms<i></i></span></a>
+  <a href="#" style="--clr:#f0f"  id="  "><span>Financial Accounting<i></i></span></a>
+</div>
+
+<!-- // CREATING A CODE LIST  // --> 
+
+
+<!-- // CREATING A CHAPTERS LIST  // -->
+
+
+<div class="container">
+    <div class=" scss" id="mchapters">
+      <a href="#" style="--clr:#0f0" id="m1"><span> 1.Introduction <i></i></span></a>
+      <a href="#" style="--clr:#0ef" id="m2" ><span> 2.Intel 8085  <i></i></span></a>
+      <a href="#" style="--clr:#ff0" id="m3" ><span> 3.Microoperations  <i></i></span></a>
+      <a href="#" style="--clr:#f00" id="m4"  ><span>4.Central Processing Unit  <i></i></span></a>
+      <a href="#" style="--clr:#f0f" id="m5" ><span> 5.Pipelining <i></i></span></a>
+      <a href="#" style="--clr:#f0f" id="m6" ><span>6.Computer Arithmetic<i></i></span></a>
+      <a href="#" style="--clr:#f0f" id="m7" ><span> 7.Input and Output Organization <i></i></span></a>
+      <a href="#" style="--clr:#f0f" id="m8" ><span> 8.Memory Organization <i></i></span></a>    
+  </div>
+
+  <div id="microprocessor" class="content">
+      <!-- PDF pages will be rendered here -->
+  </div>
+</div> 
+
+
+
+<div class="scss" id="wchapters">
+  <a href="#" style="--clr:#f0f" id="  " ><span> 1.Internet <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>2.HTML  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>3.CSS  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 4.JS <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>5.XML  <i></i></span></a>
+</div>
+
+<div class="scss " id="dchapters">
+  <a href="#" style="--clr:#f0f" id="  " ><span> 1.Introduction <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 2.Linked List <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>  3.Stacks<i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 4.Queue <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 5.Recursion <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>6.Trees  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>7.Graphs  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 8.Sorting <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 9.Searching & Hashing <i></i></span></a>
+</div>
+
+<div class=" scss" id="schapters">
+  <a href="#" style="--clr:#f0f" id="  " ><span> 1.Graph & Table <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>2.Numerical Measures  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>3.Linear Correlation  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>4.Linear Regression<i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>5.probability <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 6.Probability Distribuition <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 7.Sampling Theory <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>8.Estimation  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 9.Hypothesis Testing <i></i></span></a>
+</div>
+
+<div class="scss " id="achapters">
+  <a href="#" style="--clr:#f0f" id="  " ><span>1.Basic Understanding <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 2.Conceptual Feamework <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 3.Accounting Process <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 4.Bank Reconcilation Statement <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 5.Account for Property,Plant and Equipment <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span> 6.Basic Financial Statements <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>7.Value Added Statements<i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="  " ><span>8.Analysis of Financial Statements  <i></i></span></a> 
+</div>
+
+
+
+<!-- // ENDING A CHAPTERS LIST  // -->
+
+<!-- // MICROPROCESSOR  // -->
+
+
+</i>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>  
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="/js/micro.js"></script>
+    <script type="text/javascript" src="/js/chapter.js"></script>
+    <script type="text/javascript" src="js/land.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+</body>
+</html>
