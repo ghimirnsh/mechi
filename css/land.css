@@ -90,7 +90,7 @@ ul li a i
 
 ul li:hover a i
   {
-    color:gold;
+    color:#ff0;
     filter: drop-shadow(0 0 15px gold);
   }
 
@@ -99,7 +99,7 @@ ul li:hover a i
 
 ul li.active a i
   {
-    color: gold;
+    color: #ff0;
     filter: drop-shadow(0 0 15px gold);
     transform: translateY(-8px);
   }
@@ -125,7 +125,7 @@ ul li text
        pointer-events: none;
        transform: translateY(25px);
        opacity: 0;
-       font-size: 0.7em;
+       font-size: 0.6em;
        letter-spacing: 0.05em;
        transition: .6s;
        text-transform: uppercase;
@@ -135,11 +135,11 @@ ul li text
 ul li.active text
   {
     opacity: 1;
-    color: gold;
+    color: #ff0;
     letter-spacing: .15em;
     font-weight:500;
     transition: .5s;
-    filter: drop-shadow(0 0 10px gold);
+    filter: drop-shadow(0 0 10px #ff0);
   }
 
   .indicator span
