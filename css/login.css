@@ -1,0 +1,107 @@
+
+
+
+.loginclass
+{
+     border: 1.1px solid gold;
+     border-radius: 10px;
+     padding: 20px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     height: 50vh;
+     width: 75%;
+     height: 80vh;
+     max-height: 330px;
+     max-width: 300px;
+     margin-top: 50px;
+     font-family: 'Courier New', Courier, monospace;
+}
+
+.loginclass h2
+{
+    
+        font-size: 1.8em;
+        letter-spacing: .05em;
+        font-weight: 500;
+        background: linear-gradient(to right, 
+        #0dff00 20%, 
+        #ffd700 40%,
+        #08f8f4 100%);    
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Make the text color transparent */
+        text-align: center;
+    
+    
+}
+
+.loginclass input
+{
+    border: 1.1px solid rgb(247, 212, 15);
+    border-radius: 6px;
+    padding: 15px 15px;
+    background: transparent;
+    color: gold;
+    font-size: 1.02em;
+    font-weight: 500;
+    letter-spacing: .03em;
+    width: 80%;
+    height: 10px;
+    outline: none;
+    transition: all 0.5s ease;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.loginclass input::placeholder
+{
+   color: gold;
+   opacity: .9;
+}
+
+.loginclass input:hover
+{
+    box-shadow:1px 1px 10px 3px gold;
+    transition: all 0.5s ease;
+}
+
+.loginclass button
+{
+    background: transparent;
+    padding: 8px 15px ;
+    width: 50%;
+    min-width: 100px;
+    max-width: 200px;
+    outline:none;
+    border: 1.1px solid gold;
+    color: gold;
+    font-size :1.1em;
+    font-weight: 530;
+    letter-spacing: .1em;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition-duration: .3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.loginclass button:hover
+{
+    letter-spacing: 0.2em;
+    transition-duration: .5s;
+
+}
+
+.loginclass p
+{
+    color: gold;
+    font-weight: 530;
+    font-size: 0.9em;
+    letter-spacing: .03em;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition-duration: .3s;
+}
