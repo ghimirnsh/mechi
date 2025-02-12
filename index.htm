@@ -56,16 +56,13 @@
 
 <div class="navbar">
         <ul> 
-          <li id="n"  onclick="noteslist()"><a href="#"><i class=" fa-light fa-book-open-cover"></i><text>Notes</text></a></li>
-          <li id="q"  onclick="questionslist()"><a href="#"><i class=" fa-light fa-cloud-question"></i><text>Questions</text></a></li>
-         <li id="c"  onclick="codelist()"><a href="#"><i class=" fa-light fa-code "></i><text>Code</text></a></li>
-         <li id="f"  onclick="filelist()"><a href="#"><i class=" fa-light fa-files"></i><text>Files</text></a></li>
+          <li id="n" onclick="noteslist()"><a href="#"><i class=" fa-light fa-book-open-cover"></i><text>Notes</text></a></li>
+          <li id="q" onclick="questionslist()"><a href="#"><i class=" fa-light fa-cloud-question"></i><text>Questions</text></a></li>
+         <li id="c" onclick="codelist()"><a href="#"><i class=" fa-light fa-code "></i><text>Code</text></a></li>
+         <li id="f" onclick="filelist()"><a href="#"><i class=" fa-light fa-files"></i><text>Files</text></a></li>
 
         </ul>
 </div>
-
-
-
 
 
      
@@ -80,97 +77,99 @@
 </div>
 
 <!-- // CREATING A QUESTIONS LIST  // -->
-
 <div class="scss qjs">
-  <a href="#" style="--clr:#0f0"   id="  " ><span>Microprocessor<i></i></span></a>
-  <a href="#" style="--clr:#f00"  id="  "><span>Business Statistics<i></i></span></a>
-  <a href="#" style="--clr:#ff0"   id="  "><span> Web Technology<i></i></span></a>
-  <a href="#" style="--clr:#0ef"  id="  "><span>Data Structure and Algorithms<i></i></span></a>
-  <a href="#" style="--clr:#f0f"  id="  "><span>Financial Accounting<i></i></span></a>
+  <a href="#" style="--clr:#0f0" id="mq"><span>Microprocessor<i></i></span></a>
+  <a href="#" style="--clr:#f00" id="sq"><span>Business Statistics<i></i></span></a>
+  <a href="#" style="--clr:#ff0" id="wq"><span>Web Technology<i></i></span></a>
+  <a href="#" style="--clr:#0ef" id="dq"><span>Data Structure and Algorithms<i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="aq"><span>Financial Accounting<i></i></span></a>
 </div>
+
+<!-- These are the containers for showing question PDFs -->
+<div id="microprocessor-questions" class="content"></div>
+<div id="web-questions" class="content"></div>
+<div id="dsa-questions" class="content" ></div>
+<div id="stats-questions" class="content" ></div>
+<div id="account-questions" class="content" ></div>
+
+
 
 <!-- // CREATING A CODE LIST  // --> 
 
 
 <!-- // CREATING A CHAPTERS LIST  // -->
 
-
-<div class="container">
-    <div class=" scss" id="mchapters">
-      <a href="#" style="--clr:#0f0" id="m1"><span> 1.Introduction <i></i></span></a>
-      <a href="#" style="--clr:#0ef" id="m2" ><span> 2.Intel 8085  <i></i></span></a>
-      <a href="#" style="--clr:#ff0" id="m3" ><span> 3.Microoperations  <i></i></span></a>
-      <a href="#" style="--clr:#f00" id="m4"  ><span>4.Central Processing Unit  <i></i></span></a>
-      <a href="#" style="--clr:#f0f" id="m5" ><span> 5.Pipelining <i></i></span></a>
-      <a href="#" style="--clr:#f0f" id="m6" ><span>6.Computer Arithmetic<i></i></span></a>
-      <a href="#" style="--clr:#f0f" id="m7" ><span> 7.Input and Output Organization <i></i></span></a>
-      <a href="#" style="--clr:#f0f" id="m8" ><span> 8.Memory Organization <i></i></span></a>    
-  </div>
-
-  <div id="microprocessor" class="content">
-      <!-- PDF pages will be rendered here -->
-  </div>
-</div> 
-
+<div class=" scss" id="mchapters">
+  <a href="#" style="--clr:#0f0" id="m1"><span> 1.Introduction <i></i></span></a>
+  <a href="#" style="--clr:#0ef" id="m2" ><span> 2.Intel 8085  <i></i></span></a>
+  <a href="#" style="--clr:#ff0" id="m3" ><span> 3.Microoperations  <i></i></span></a>
+  <a href="#" style="--clr:#f00" id="m4"  ><span>4.Central Processing Unit  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="m5" ><span> 5.Pipelining <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="m6" ><span>6.Computer Arithmetic<i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="m7" ><span> 7.Input and Output Organization <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="m8" ><span> 8.Memory Organization <i></i></span></a>    
+</div>
 
 
 <div class="scss" id="wchapters">
-  <a href="#" style="--clr:#f0f" id="  " ><span> 1.Internet <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>2.HTML  <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>3.CSS  <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 4.JS <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>5.XML  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="w1" ><span> 1.Internet <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="w2" ><span>2.HTML  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="w3" ><span>3.CSS  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="w4" ><span> 4.JS <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="w5" ><span>5.XML  <i></i></span></a>
 </div>
 
+
+
 <div class="scss " id="dchapters">
-  <a href="#" style="--clr:#f0f" id="  " ><span> 1.Introduction <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 2.Linked List <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>  3.Stacks<i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 4.Queue <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 5.Recursion <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>6.Trees  <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>7.Graphs  <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 8.Sorting <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 9.Searching & Hashing <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="d1" ><span> 1.Introduction <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="d2" ><span> 2.Linked List <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="d3" ><span>  3.Stacks<i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="d4" ><span> 4.Queue <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="d5" ><span> 5.Recursion <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="d6" ><span>6.Trees  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="d7" ><span>7.Graphs  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="d8" ><span> 8.Sorting <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="d9" ><span> 9.Searching & Hashing <i></i></span></a>
 </div>
 
 <div class=" scss" id="schapters">
-  <a href="#" style="--clr:#f0f" id="  " ><span> 1.Graph & Table <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>2.Numerical Measures  <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>3.Linear Correlation  <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>4.Linear Regression<i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>5.probability <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 6.Probability Distribuition <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 7.Sampling Theory <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>8.Estimation  <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 9.Hypothesis Testing <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="s1" ><span> 1.Graph & Table <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="s2" ><span>2.Numerical Measures  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="s3" ><span>3.Linear Correlation  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="s4" ><span>4.Linear Regression<i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="s5" ><span>5.probability <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="s5" ><span> 6.Probability Distribuition <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="s6" ><span> 7.Sampling Theory <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="s7" ><span>8.Estimation  <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="s8" ><span> 9.Hypothesis Testing <i></i></span></a>
 </div>
 
 <div class="scss " id="achapters">
-  <a href="#" style="--clr:#f0f" id="  " ><span>1.Basic Understanding <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 2.Conceptual Feamework <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 3.Accounting Process <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 4.Bank Reconcilation Statement <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 5.Account for Property,Plant and Equipment <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span> 6.Basic Financial Statements <i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>7.Value Added Statements<i></i></span></a>
-  <a href="#" style="--clr:#f0f" id="  " ><span>8.Analysis of Financial Statements  <i></i></span></a> 
+  <a href="#" style="--clr:#f0f" id="a1" ><span>1.Basic Understanding <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="a2" ><span> 2.Conceptual Feamework <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="a3" ><span> 3.Accounting Process <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="a4" ><span> 4.Bank Reconcilation Statement <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="a5" ><span> 5.Account for Property,Plant and Equipment <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="a6" ><span> 6.Basic Financial Statements <i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="a7" ><span>7.Value Added Statements<i></i></span></a>
+  <a href="#" style="--clr:#f0f" id="a8" ><span>8.Analysis of Financial Statements  <i></i></span></a> 
 </div>
 
 
-
-<!-- // ENDING A CHAPTERS LIST  // -->
-
-<!-- // MICROPROCESSOR  // -->
-
+<!-- // NOTES PDFS  // -->
+ 
+<div id="microprocessor" class="content"></div>
+<div id="web" class="content"></div>
+<div id="dsa" class="content"></div>
+<div id="stats" class="content"></div>
+<div id="account" class="content"></div>
 
 </i>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>  
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="text/javascript" src="/js/micro.js"></script>
     <script type="text/javascript" src="/js/chapter.js"></script>
     <script type="text/javascript" src="js/land.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
