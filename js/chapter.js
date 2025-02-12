@@ -7,11 +7,15 @@ hideSubject=()=>{
         item.style.display='none';
     });   
 }
-     // Function to hide all pages
-     function clearPDFContainer() {
-        document.getElementById('microprocessor').innerHTML = '';
-    }
 
+
+// HIDE ALL CONTENTS
+hideContent=()=>{
+    document.querySelectorAll('.content').forEach(item => {
+        item.style.display='none';
+    });   
+}
+ 
 
 
 
@@ -19,7 +23,7 @@ hideSubject=()=>{
 let microprocessor=document.getElementById('mnotes');
 microprocessor.addEventListener('click', function() {
     hideSubject();
-    clearPDFContainer();
+    hideContent();
     document.getElementById('mchapters').style.display='flex';
 });
 
@@ -27,7 +31,7 @@ microprocessor.addEventListener('click', function() {
 let web=document.getElementById('wnotes');
 web.addEventListener('click', function() {
     hideSubject();
-    clearPDFContainer();
+    hideContent();
     document.getElementById('wchapters').style.display='flex';
 });
 
@@ -35,7 +39,7 @@ web.addEventListener('click', function() {
 let dsa=document.getElementById('dnotes');
 dsa.addEventListener('click', function() {
     hideSubject();
-    clearPDFContainer();
+    hideContent();
     document.getElementById('dchapters').style.display='flex';
 });
 
@@ -43,7 +47,7 @@ dsa.addEventListener('click', function() {
 let stats=document.getElementById('snotes');
 stats.addEventListener('click', function() {
     hideSubject();
-    clearPDFContainer();
+    hideContent();
     document.getElementById('schapters').style.display='flex';
 });
 
@@ -51,6 +55,6 @@ stats.addEventListener('click', function() {
 let account=document.getElementById('anotes');
 account.addEventListener('click', function() {
     hideSubject();
-    clearPDFContainer();
+    hideContent();
     document.getElementById('achapters').style.display='flex';
 });
