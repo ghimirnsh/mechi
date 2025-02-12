@@ -43,16 +43,20 @@ hideAll = () => {
     }
 }
 
- // Function to hide all pages
- function clearPDFContainer() {
-    document.getElementById('microprocessor').innerHTML = '';
+
+// HIDE ALL CONTENTS
+hideContent=()=>{
+    document.querySelectorAll('.content').forEach(item => {
+        item.style.display='none';
+    });   
 }
+ 
 
 
 // Show subjects when clicked
 let noteslist = () => {   
     hideAll();
-    clearPDFContainer();
+    hideContent();
     let subject = document.getElementsByClassName('njs');
     for (let i = 0; i < subject.length; i++) {
         subject[i].style.display = 'flex';
@@ -62,7 +66,7 @@ let noteslist = () => {
 // show questions when clicked
 let questionslist = () => {
     hideAll();
-    clearPDFContainer();
+    hideContent();
     let resource = document.getElementsByClassName('qjs');
     for (let i = 0; i < resource.length; i++) {
         resource[i].style.display = 'flex';
@@ -74,8 +78,14 @@ let questionslist = () => {
 // Show codes when clicked
 let codelist = () => {
     hideAll();
-    clearPDFContainer();
+    hideContent();
 
+}
+
+let filelist = () =>
+{
+    hideAll();
+    hideContent();
 }
 
 
