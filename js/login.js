@@ -12,7 +12,7 @@ function checkLogin() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    if (username === "mechi" && password === "bim") {
+    if (username === "mechi" && password === "what") {
         sessionStorage.setItem("loggedIn", "true"); // Store login state in sessionStorage
         showContent();
     } else {
